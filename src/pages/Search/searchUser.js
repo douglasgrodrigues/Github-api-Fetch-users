@@ -3,11 +3,13 @@ import axios from "axios"
 import { useHistory } from "react-router-dom"
 import useForm from "../../hooks/userForm"
 import { goToProfileUserPage } from "../../routes/paths"
-import { MainContainer } from "../../style"
+import { MainContainer, Logomarca } from "../../style"
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
-import {InputField, PageTitle} from "./style"
+import {InputField} from "./style"
 import { BASE_URL } from "../../bases/url"
+import bgImg from "../../assets/background.png"
+
 
 const initialForm = {
     username: "",
@@ -33,8 +35,10 @@ const Search = () => {
 
     return(
         <MainContainer>           
-            <InputField onSubmit = {getProfile}>
-                <div>
+            <InputField onSubmit = {getProfile}>        
+                <Logomarca>
+                    <img className="bg" src={bgImg} alt="Logo Compasso" />
+                </Logomarca>
                 <TextField
                     required
                     name={"username"}
@@ -45,7 +49,6 @@ const Search = () => {
                     margin={"normal"}
                     value={form.username}
                     onChange={onChange}/>
-                </div>
                 <Button 
                     variant={"contained"}
                     type={'submit'}

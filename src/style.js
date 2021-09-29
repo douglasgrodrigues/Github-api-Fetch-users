@@ -9,6 +9,18 @@ export const MainContainer = styled.main`
     align-items: center;
     overflow-y: auto;
     justify-content: flex-start;
-    background-color: ${secondaryColor};`
+    background-color: ${secondaryColor};
+`
+
+export const Logomarca = styled.main`
+    .bg{
+        position: absolute;
+        bottom: 35px;
+        width: 100%;
+        right: 25px;
+        width: 20%;
+        height: 5vw;
+    }
+`
 
 

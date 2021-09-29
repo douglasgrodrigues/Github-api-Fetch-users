@@ -12,5 +12,7 @@ export const InputField = styled.form`
         color: white;
         border: 1px solid white;
         background: none;
-    }`
+    }
+
+`
 
