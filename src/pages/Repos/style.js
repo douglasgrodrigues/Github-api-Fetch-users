@@ -9,19 +9,13 @@ export const DivBackButton = styled.div`
     height: 60%;
 `
 
-export const Header = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+export const Header = styled.header`
     width: 95%;
-    height: 10vh;
-    `
-
-export const Title = styled.h2`
-    color: ${elementColor};
-    display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px;
+`
+export const Title = styled.h2`
+    color: white;
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 10px;
 `
